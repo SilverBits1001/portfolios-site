@@ -1,0 +1,62 @@
+.home {
+  height: 100vh;
+  padding: 50px;
+}
+
+h1 {
+  color: #adadad;
+  font-size: 60px;
+}
+
+.name {
+  color: yellow;
+}
+
+.tagline {
+  color: #4d4d4e;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: yellow;
+  border-color: yellow;
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: lightyellow;
+    border-color: lightyellow;
+  }
+}
+
+.bio {
+  color: lightgrey;
+  padding: 20px 0;
+  
+}
+
+.form-label{
+  color: grey;
+}
+
+.form-control{
+  background-color:rgb(36, 36, 36);
+  border-color: transparent;
+  padding: 10px 15px;
+  transition: all 0.3s ease-out;
+
+color: #adadad;
+  .textarea{
+    resize:none
+  }
+.label{
+  color:red
+}
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:visited {
+  background-color: yellow !important;
+  color: black;
+  border-color: yellow;
+}
+
+
