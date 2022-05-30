@@ -22,6 +22,11 @@
   font-weight: 600;
   text-align: center;
 
+  &:hover {
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+
+  }
   .logo-brackets {
     color: yellow;
   }
@@ -95,6 +100,30 @@
       display: block;
 
       content: "Contact";
+    }
+  }
+}
+
+ul {
+  bottom: 20px;
+  display: block;
+  padding: 0;
+  padding-bottom: 5px;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  list-style: none;
+
+  li {
+    padding: 10px;
+
+    svg {
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        color: yellow;
+        transition: all 0.3s ease-out;
+      }
     }
   }
 }
