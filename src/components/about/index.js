@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import './index.scss'
 export default function About() {
     return (
-        <div className='home d-flex align-items-center  justify-content-center'>
+        <div className='about p-2 d-flex align-items-center  justify-content-center'>
 
             <Container>
                 <Row>

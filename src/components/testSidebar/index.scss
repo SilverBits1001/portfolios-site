@@ -106,14 +106,7 @@
 
 ul { 
     @media (max-width: 992px) {
-        position: absolute;
-        background-color: #101010;
-        width: 100%;
-        bottom: 0;
-        margin-left: auto;
-        li{
-            margin: auto;
-        }
+    display: none;
       }
 
   display: inline;

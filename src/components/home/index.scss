@@ -1,10 +1,10 @@
 .home {
-  height: 100vh;
+  height: 100%;
 }
 
 .intro {
     
-    font-size: clamp(2rem, 4vw, 4.5rem); 
+    font-size: clamp(2.5rem, 4vw, 4.5rem); 
 }
 
 .name {
@@ -13,7 +13,7 @@
 
 .tagline {
   color: #4d4d4e;
-  font-size: clamp(.5rem, 4.5vw, 1.5rem); 
+  font-size: clamp(1rem, 4.5vw, 1.5rem); 
 
 }
 
