@@ -1,20 +1,20 @@
 .home {
   height: 100vh;
-  
-
 }
 
-h1 {
-  color: #adadad;
-  font-size: 60px;
+.intro {
+    
+    font-size: clamp(2rem, 4vw, 4.5rem); 
 }
 
-.name{
-    color: yellow;
+.name {
+  color: yellow;
 }
 
 .tagline {
   color: #4d4d4e;
+  font-size: clamp(.5rem, 4.5vw, 1.5rem); 
+
 }
 
 .contact-button {
@@ -27,4 +27,7 @@ h1 {
     color: lightyellow;
     border-color: lightyellow;
   }
+}
+
+.test {
 }

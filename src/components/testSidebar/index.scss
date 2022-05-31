@@ -104,9 +104,19 @@
   }
 }
 
-ul {
-  bottom: 20px;
-  display: block;
+ul { 
+    @media (max-width: 992px) {
+        position: absolute;
+        background-color: #101010;
+        width: 100%;
+        bottom: 0;
+        margin-left: auto;
+        li{
+            margin: auto;
+        }
+      }
+
+  display: inline;
   padding: 0;
   padding-bottom: 5px;
   list-style: none;
