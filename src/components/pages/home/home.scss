@@ -1,0 +1,40 @@
+@import "/src/App.scss";
+
+.headline {
+  text-align: left;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $gold-web-golden;
+}
+
+.content {
+  padding: 10px;
+}
+
+@keyframes taadaa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  animation: rubberBand;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+}

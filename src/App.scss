@@ -1,21 +1,58 @@
-$primary-color: #ffd700;
-@import 'animate.css';
+@import "animate.css";
 
+$black: #1b2021;
+$grey: #33494c;
+$yellow: #ffbc42;
+$teal: #e0fbfc;
+$coral: #ee6055;
 
+$rich-black-fogra-29: #000814ff;
+$oxford-blue: #001d3dff;
+$prussian-blue: #003566ff;
+$mikado-yellow: #ffc300ff;
+$gold-web-golden: #ffd60aff;
 
-.root-container{
-height: 100%;
+html {
+  font-size: 24px;
+  h1,
+  h2,
+  p {
+    color: white;
+  }
 }
 
-
-.no-gutters {
-  margin-right: 0px;
-  margin-left: 0;
-  padding: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
+@media (max-width: 1921px) {
+  html {
+    font-size: 22px;
   }
+}
+
+@media (max-width: 1441px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.root {
+  //background: linear-gradient(90deg,$black, $teal);
+  margin: 0;
+  padding: 0;
+  background-color: $oxford-blue;
+  height: 100;
+}
+
+.custom-btn {
+  font-size: 0.75rem;
+  font-weight: 900;
+  background-color: $gold-web-golden;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
