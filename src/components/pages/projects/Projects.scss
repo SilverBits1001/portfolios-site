@@ -1,12 +1,15 @@
 @import "./src/App.scss";
+@import "animate.css";
 
-.test {
-
-  margin-bottom: 1rem;
+.shadow-container {
+  
+    height: 100%;
+  position: absolute;
+  z-index: 1;
   height: 300px;
   width: 300px;
-  background-color: $yellow;
-  box-shadow: inset 0.3rem 0.3rem 0.75rem $black, 0 0 0 0.5rem $yellow;
+  border: $yellow 0.5rem solid;
+  box-shadow: inset 0.3rem 0.3rem 0.75rem $black;
 }
 
 h3 {
@@ -16,5 +19,21 @@ h3 {
 }
 p {
   text-align: center;
- 
+}
+
+.pic {
+  background-color: $yellow;
+  animation: slideInUp;
+  animation-duration: 2s;
+
+}
+
+ .animate{
+  &:hover {
+    animation: pulse;
+    animation-duration: 0.75s;
+  }
+}
+.projects{
+   text-align: center;
 }

@@ -12,7 +12,21 @@ export default function About() {
                     </Col>
                     <Col className='col-8  '>
                         <p className='section-content'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum        </p>
+                            I’m a very ambitious front-end developer looking to work with the latest
+
+                            technologies on challenging and diverse projects. I am naturally curious, and always eager to learn more and take on new
+
+                            challenges. I enjoy
+
+                            I'm quietly confident, naturally curious, and perpetually working on
+                            improving my chops one design problem at a time.
+
+                            If I need to define myself in one sentence that would be a family
+
+                            person, father of a beautiful daughter, a sports fanatic,
+
+                            photography enthusiast, and tech-obsessed!!!
+                            </p>
                     </Col>
                 </Row>
 
@@ -21,3 +35,4 @@ export default function About() {
         </Container>
     )
 }
+

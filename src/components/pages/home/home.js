@@ -11,7 +11,7 @@ export default function Home() {
             <Row className='w-100'>
                 <Col>
                     <div className='mx-auto heading-container mb-3 my-auto'>
-                        <h1 className='heading mb-1'>
+                        <h1 className='heading mb-3'>
                             Hi, I'm Corey!
                         </h1>
                         <h3 className='sub-heading '>
