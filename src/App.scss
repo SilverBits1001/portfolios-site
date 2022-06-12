@@ -1,8 +1,11 @@
 @import "animate.css";
 
-$black: #1b2021;
+$red: #ff0054;
+$orange: #ff5400;
+$yellow: #ffbd00;
+
+$black: #131313;
 $grey: #33494c;
-$yellow: #ffbc42;
 $teal: #e0fbfc;
 $coral: #ee6055;
 
@@ -14,10 +17,19 @@ $gold-web-golden: #ffd60aff;
 
 html {
   font-size: 24px;
+ 
   h1,
   h2,
   p {
     color: white;
+  }
+
+  a{
+    text-decoration: none;
+    &:hover{
+      color: $red;
+
+    }
   }
 }
 
@@ -39,12 +51,12 @@ html {
   }
 }
 
+
 .root {
   //background: linear-gradient(90deg,$black, $teal);
   margin: 0;
   padding: 0;
-  background-color: $oxford-blue;
-  height: 100;
+  background-color: #131313;
 }
 
 .custom-btn {

@@ -1,11 +1,35 @@
-@import "/src/App.scss";
+@import "./src/App.scss";
 
+.section-container {
+padding: 3rem 0;
+height: 100%;
 
-
-.about-title{
-    color:$mikado-yellow;
 }
 
-.about-info{
-    font-size: .8rem;
+.section-border {
+  background-color: $yellow;
+  padding: 3rem ;
+  box-shadow: inset 0rem 0 1rem 0rem black;
+  border-top: $orange 0.3rem solid;
+  border-bottom: $orange 0.3rem solid;
 }
+
+.section-title {
+  color: black;
+  transform: rotate(-90deg);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.section-content {
+  color: black;
+
+  font-size: 1rem;
+  margin: 2rem 4rem;
+}
+
+.socials {
+  text-align: center;
+  color: $red;
+}
+

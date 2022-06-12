@@ -3,22 +3,19 @@ import './App.scss';
 
 import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import Layout from './components/layout/layout';
+import Navbar from './components/navbar/navbar';
 import Home from './components/pages/home/home';
 import About from './components/pages/about/about';
-import Contact from './components/pages/contact/contact';
+import Projects from './components/pages/projects/Projects';
+
 
 function App() {
   return (
-    <Container className='root' fluid>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-
+    <Container className='root h-100 pb-5' fluid>
+      <Navbar />
+      <Home />
+      <About/>
+      <Projects/>
     </Container>
   );
 }

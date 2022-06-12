@@ -1,40 +1,33 @@
-@import "/src/App.scss";
+@import "./src/App.scss";
 
-.headline {
-  text-align: left;
+@import "animate.css";
+
+.home-container {
+  height: 90vh;
 }
 
-.title {
+.heading-container {
+  display: block;
+  box-shadow: -0.3rem 0.3rem 0.5rem 0.05rem $black, 0 0 0 0.75rem $yellow;
+  margin: 5rem 1rem;
+  width: 75%;
+  padding: 4rem;
+}
+
+.heading {
   font-size: 3rem;
-  font-weight: 700;
+ 
 }
 
-.subtitle {
-  font-size: 2rem;
-  font-weight: 400;
-  color: $gold-web-golden;
-}
-
-.content {
-  padding: 10px;
-}
-
-@keyframes taadaa {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.sub-heading {
+  color: grey;
 }
 
 .arrow-down {
   position: absolute;
-  left: 50%;
   bottom: 50px;
-  animation: rubberBand;
+  color: white;
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
   animation-iteration-count: infinite;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
 }
