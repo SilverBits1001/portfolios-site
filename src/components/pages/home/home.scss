@@ -3,15 +3,21 @@
 @import "animate.css";
 
 .home-container {
-  height: 90vh;
+    @media (min-width: 992px) {
+      height:100vh;
+
+    }
 }
 
 .heading-container {
+    @media (min-width: 992px) {
+        margin: 5rem 1rem;
+        width: 75%;
+
+    }
   display: block;
   box-shadow: -0.3rem 0.3rem 0.5rem 0.05rem $black, 0 0 0 0.75rem $yellow;
-  margin: 5rem 1rem;
-  width: 75%;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .heading {
@@ -25,10 +31,8 @@
 }
 
 .arrow-down {
-  position: absolute;
-  bottom: 50px;
   color: white;
-  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
   animation-iteration-count: infinite;
 }

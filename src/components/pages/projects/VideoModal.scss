@@ -1,0 +1,25 @@
+@import "./src/App.scss";
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.modal-background{
+
+      box-shadow: 0rem 0rem 0 0.1rem $yellow, -0.3rem 0.3rem 0.3rem $black,
+    -0.3rem 0.3rem 0 0.1rem $orange, -0.6rem 0.6rem 0.3rem $black,
+    -0.6rem 0.6rem 0 0.1rem $red;
+
+}
+
+.modal-content{
+    margin: 1rem;
+}

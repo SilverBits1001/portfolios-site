@@ -7,10 +7,10 @@ import './home.scss'
 
 export default function Home() {
     return (
-        <Container className='home-container d-flex flex-column justify-content-center align-items-center'>
+        <Container className='home-container my-5 my-lg-0  d-flex flex-column justify-content-lg-center align-items-center'>
             <Row className='w-100'>
                 <Col>
-                    <div className='mx-auto heading-container mb-3 my-auto'>
+                    <div className='mx-auto my-5 heading-container mb-3 '>
                         <h1 className='heading mb-3'>
                             Hi, I'm Corey!
                         </h1>
@@ -28,10 +28,12 @@ export default function Home() {
                 </Col>
             </Row>
 
+            <Row className=''>
+                <a href='#about' className='align-self-start' >
+                    <FontAwesomeIcon className='arrow-down my-5' icon={faAngleDoubleDown} size={'lg'} />
+                </a>
+            </Row>
 
-            <a href='#about' className='' >
-                <FontAwesomeIcon className='arrow-down' icon={faAngleDoubleDown} size={'lg'} />
-            </a>
 
 
         </Container>

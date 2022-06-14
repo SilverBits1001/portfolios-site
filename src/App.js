@@ -7,6 +7,8 @@ import Navbar from './components/navbar/navbar';
 import Home from './components/pages/home/home';
 import About from './components/pages/about/about';
 import Projects from './components/pages/projects/Projects';
+import Contact from './components/pages/contact/contact';
+import VideoModal from './components/pages/projects/VideoModal';
 
 
 function App() {
@@ -14,8 +16,12 @@ function App() {
     <Container className='root h-100 pb-5' fluid>
       <Navbar />
       <Home />
-      <About/>
-      <Projects/>
+      <About />
+ 
+      <Projects />
+
+      <Contact />
+      
     </Container>
   );
 }

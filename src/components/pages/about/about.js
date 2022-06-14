@@ -4,13 +4,17 @@ import './about.scss'
 
 export default function About() {
     return (
-        <Container fluid id='about' className='section-container my-5 '>
+        <Container fluid id='about' className='section-container '>
             <div className='section-border'>
-                <Row className=''>
-                    <Col className='col-3 d-flex justify-content-start align-items-center'>
-                        <h2 className='section-title'>About Me</h2>
+                <Row className='mx-auto'>
+                    <Col className=' col-lg-4 col-12 mx-auto d-flex  justify-content-center justify-content-lg-start align-items-center'>
+                     <div>
+                     <h2 className='section-title'>About Me</h2>
+
+                     </div>
+
                     </Col>
-                    <Col className='col-8  '>
+                    <Col className='col-lg-8 col-12  '>
                         <p className='section-content'>
                             I’m a very ambitious front-end developer looking to work with the latest
 
@@ -26,7 +30,13 @@ export default function About() {
                             person, father of a beautiful daughter, a sports fanatic,
 
                             photography enthusiast, and tech-obsessed!!!
-                            </p>
+                        </p>
+                        <p className='section-content'>
+                            I'm Corey Coleman, a Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
+                            I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
+                            When not working or futzing around with code, I study how to escape from University. Actually for hire.
+                        </p>
+
                     </Col>
                 </Row>
 
