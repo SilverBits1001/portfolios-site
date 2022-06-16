@@ -4,7 +4,7 @@
   background-color: $black;
 }
 
-.custom-border {
+.nav-border {
   background-color: $black;
 
   box-shadow: inset 0rem 0rem 0 0.1rem $yellow, 0rem 0rem 0 0.1rem $yellow,
@@ -20,8 +20,16 @@
   }
   margin: 0;
 }
+.navbar-light .navbar-brand {
+  color: white;
+  font-weight: 700;
+  &:hover {
+    color: $orange;
+  }
+  margin: 0;
+}
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
   font-weight: 700;
   color: white;
   text-decoration: none;
@@ -34,4 +42,12 @@
 
 .nav-link {
   display: inline-block;
+}
+
+.custom-toggler.navbar-toggler {
+  background-color: $black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

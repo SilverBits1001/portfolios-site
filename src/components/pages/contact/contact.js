@@ -19,10 +19,8 @@ export default function Contact() {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
-            })
-            .then(() => {
-                form.reset()
             });
+  
     };
 
     return (
@@ -37,7 +35,7 @@ export default function Contact() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className='col-12 col-lg-6 mx-auto' >
+                            <Col className='col-6 mx-auto' >
                                 <Form ref={form} onSubmit={sendEmail}>
                                     <Row>
                                         <Col className='col-12 col-sm-6'>

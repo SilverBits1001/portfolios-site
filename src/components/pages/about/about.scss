@@ -1,18 +1,17 @@
 @import "./src/App.scss";
-@import 'animate.css';
+@import "animate.css";
 
 .section-container {
-  padding: 3rem 0;
-  height: 75vh;
-
+  padding: 1rem 0;
 }
 
 .section-border {
   background-color: $yellow;
   padding: 2rem;
   box-shadow: inset 0rem 0 1rem 0rem black;
-  border-top: $orange 0.3rem solid;
-  border-bottom: $orange 0.3rem solid;
+
+  box-shadow: inset 0rem 0 0.3rem 0rem black, inset 0rem 0.3rem $orange, 
+   inset 0rem -0.3rem $orange,  inset 0rem 0 0.6rem 0rem black;
 }
 
 .check {
@@ -24,7 +23,7 @@
     padding: 0;
     margin: 0;
   }
-  
+
   color: black;
   font-size: 2.5rem;
   font-weight: 700;
@@ -46,6 +45,5 @@
 }
 
 .socials {
-  text-align: center;
-  color: $red;
+text-align: center;
 }
