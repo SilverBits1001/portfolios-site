@@ -36,22 +36,27 @@ export default function About() {
                             photography enthusiast, and tech-obsessed!!! */}
                         </p>
                         <p className='section-content'>
-I'm a Front-End Devloper located in Los Angeles. I have 
+                            I'm Corey, a Front-End Developer located in Los Angeles. I'm a weird guy who likes making weird things with web technologies.
+                            I enjoy the problem solving process that comes laong with programming, always trying to find the most practical solutions even if that means thinking outside the box. 
+                            I always aim for a pixel perfect design. 
+                            
+                            I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
+                            When not working or futzing around with code, I study how to escape from University. Actually for hire.
                             {/*                             I'm Corey Coleman, a Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
  */}                        </p>
                         <Row className='mx-auto'>
 
-                            <Col  className='d-flex justify-content-end'>
-                                <a target="_blank"  rel="noreferrer" href='http://www.linkedin.com/in/corey-coleman-881983218'>
+                            <Col className='d-flex justify-content-end'>
+                                <a target="_blank" rel="noreferrer" href='http://www.linkedin.com/in/corey-coleman-881983218'>
                                     <FontAwesomeIcon className='socials' icon={faLinkedin} size={'lg'} />
 
                                 </a>
 
                             </Col>
                             <Col className='d-flex justify-content-center'>
-                                <a target="_blank"  rel="noreferrer" href='https://github.com/SilverBits1001'>
+                                <a target="_blank" rel="noreferrer" href='https://github.com/SilverBits1001'>
                                     <FontAwesomeIcon className='socials' icon={faGithub} size={'lg'} />
                                 </a>
                             </Col>
