@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Button, Col, Container, Form, Row } from 'react-bootstrap'
-import Typewriter from 'typewriter-effect';
+import {  Col, Container, Form, Row } from 'react-bootstrap'
 
 
 

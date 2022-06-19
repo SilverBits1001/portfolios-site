@@ -36,7 +36,7 @@ export default function About() {
                             photography enthusiast, and tech-obsessed!!! */}
                         </p>
                         <p className='section-content'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I'm a Front-End Devloper located in Los Angeles. I have 
                             {/*                             I'm Corey Coleman, a Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
@@ -44,14 +44,14 @@ export default function About() {
                         <Row className='mx-auto'>
 
                             <Col  className='d-flex justify-content-end'>
-                                <a target="_blank" href='http://www.linkedin.com/in/corey-coleman-881983218'>
+                                <a target="_blank"  rel="noreferrer" href='http://www.linkedin.com/in/corey-coleman-881983218'>
                                     <FontAwesomeIcon className='socials' icon={faLinkedin} size={'lg'} />
 
                                 </a>
 
                             </Col>
                             <Col className='d-flex justify-content-center'>
-                                <a target="_blank" href='https://github.com/SilverBits1001'>
+                                <a target="_blank"  rel="noreferrer" href='https://github.com/SilverBits1001'>
                                     <FontAwesomeIcon className='socials' icon={faGithub} size={'lg'} />
                                 </a>
                             </Col>

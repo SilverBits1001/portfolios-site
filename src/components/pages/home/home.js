@@ -1,4 +1,4 @@
-import { faAngleDoubleDown, faArrowDown, faArrowDown19 } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'

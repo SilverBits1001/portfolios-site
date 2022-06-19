@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import ReactPlayer from 'react-player';
 import './VideoModal.scss'

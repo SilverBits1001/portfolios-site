@@ -16,11 +16,11 @@ const ProjectCard = ({line, reverse, title, img, description, link, handleShow }
             <Col className=' col-12 col-md-6 custom-border' >
                 <span onClick={handleShow} href={link} target="_blank" className='animate overflow-hidden   mb-0 d-flex justify-content-center'>
                    <span className='image-wrapper'></span>
-                    <img className='pic' src={img} />
+                    <img className='pic' src={img} alt='project image' />
                 </span>
             </Col>
             <Col className=' col-12 col-md-6'>
-                <a href={link} target="_blank" className='animate overflow-hidden mb-0 d-flex justify-content-center'>
+                <a href={link} target="_blank"  rel="noreferrer" className='animate overflow-hidden mb-0 d-flex justify-content-center'>
                     <h3>{title}</h3>
                 </a>
                 <p className='project-description '>{description}</p>

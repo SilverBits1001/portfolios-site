@@ -1,8 +1,6 @@
 import React from 'react'
 import './navbar.scss'
 import { Container, Nav, Navbar, Col, Row } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 export default function MyNavbar() {
     return (
