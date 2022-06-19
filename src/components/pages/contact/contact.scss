@@ -1,0 +1,35 @@
+@import "./src/App.scss";
+
+.test {
+    border-bottom: 2px solid $red;
+    border-left: 1px solid $orange;
+    border-top: 1px solid $yellow;
+    border-right: 1px solid white;
+}
+
+/* .form  input, .contact .row .form .form-container textarea {
+    overflow: visible;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid #555;
+    transition: .2s;
+    color: #fff;
+} */
+
+form div .form-control {
+  overflow: visible;
+  border-radius: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  border: none;
+  border-bottom: 2px solid $red;
+  transition: 0.2s;
+  color: #fff;
+}
+
+.contact-title{
+    text-align: center;
+}
+

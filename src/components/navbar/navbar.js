@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, Col, Row } from 'react-bootstrap'
 
 export default function MyNavbar() {
     return (
-        <Navbar expand='md' className='nav-border nav-container pt-2 mx-5 pb-3'>
+        <Navbar expand='md' className='nav-border nav-container pt-2 ms-3 me-2 mx-md-5 pb-3'>
             <Container>
                 <Col>
                     <Navbar.Brand className='brand ' href="#home"> &lt;C/&gt;</Navbar.Brand>

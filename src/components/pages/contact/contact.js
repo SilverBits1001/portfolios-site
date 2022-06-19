@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import {  Col, Container, Form, Row } from 'react-bootstrap'
+import { Col, Container, Form, Row } from 'react-bootstrap'
 
 
 
@@ -19,25 +19,25 @@ export default function Contact() {
             }, (error) => {
                 console.log(error.text);
             });
-  
+
     };
 
     return (
 
-        <div className='home p-5 d-flex align-items-center  justify-content-center my-5'>
+        <div className='mt-4 p-1'>
             <Container >
                 <Row>
-                    <Col className='col-12'>
+                    <Col className=' col-12'>
                         <Row>
-                            <Col >
-                                <h1 className='contact-title'>Contact Me</h1>
+                            <Col className=' pb-4'>
+                                <h2 className='contact-title'>Contact Me</h2>
                             </Col>
                         </Row>
                         <Row>
-                            <Col className='col-6 mx-auto' >
+                            <Col className='col-10 col-md-6 mx-auto' >
                                 <Form ref={form} onSubmit={sendEmail}>
                                     <Row>
-                                        <Col className='col-12 col-sm-6'>
+                                        <Col className='col-5 col-sm-6'>
                                             <Form.Group className="mb-3" controlId="formBasicName">
                                                 <Form.Control type="Name" placeholder="Name" />
                                             </Form.Group>
@@ -68,15 +68,7 @@ export default function Contact() {
                     <Col>
                     </Col>
                 </Row>
-
             </Container>
-
-
-
-
-
-
-
         </div>
     )
 }
