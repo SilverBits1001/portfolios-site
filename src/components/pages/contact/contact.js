@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react';
-/* 
+
 import emailjs from '@emailjs/browser';
- */
+
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import Lottie from "react-lottie";
 import animationData from '../../../lotties/email-sent.json';
 import './contact.scss'
-
+import { AnimatePresence, motion } from 'framer-motion';
 
 const EmailSent = () => {
 
@@ -20,9 +20,19 @@ const EmailSent = () => {
     };
 
     return (
-        <Container className='email-sent'>
-            <Lottie options={defaultOptions} height={150} width={150} />
-        </Container>
+        <AnimatePresence exitBeforeEnter>
+            <motion.div
+                key='lottie-email'
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.3, delay: 0.05 }}
+            >
+                <Container className='email-sent'>
+                    <Lottie options={defaultOptions} height={175} width={175} />
+                </Container>
+            </motion.div>
+        </AnimatePresence>
     )
 }
 
@@ -34,16 +44,16 @@ export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        form.current.reset()
-        console.log(form);
-        setEmailSent(true)
 
-        /*   emailjs.sendForm('default_service', 'template_0154k98', form.current, 'QQhjd3TZsYgws7y-o')
-              .then((result) => {
-                  console.log(result.text);
-              }, (error) => {
-                  console.log(error.text);
-              }); */
+
+        emailjs.sendForm('default_service', 'template_0154k98', form.current, 'QQhjd3TZsYgws7y-o')
+            .then((result) => {
+                console.log(result.text);
+                form.current.reset()
+                setEmailSent(true)
+            }, (error) => {
+                console.log(error.text);
+            });
 
     };
 
@@ -51,7 +61,7 @@ export default function Contact() {
 
     return (
 
-        <div className='mt-4 p-1'>
+        <div id='contact' className='mt-4 p-1'>
             <Container >
                 <Row>
                     <Col className=' col-12'>
@@ -63,31 +73,45 @@ export default function Contact() {
                         <Row>
 
                             <Col className='col-10 col-md-6 mx-auto' >
-                                {emailSent ? <EmailSent /> : <Form ref={form} onSubmit={sendEmail}>
-                                    <Row>
-                                        <Col className='col-5 col-sm-6'>
-                                            <Form.Group className="mb-3" controlId="formBasicName">
-                                                <Form.Control type="Name" placeholder="Name" />
-                                            </Form.Group>
-                                        </Col>
-                                        <Col >
-                                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                                <Form.Control type="email" placeholder="Email" />
-                                            </Form.Group>
+                                <AnimatePresence exitBeforeEnter>
+                                    {emailSent ? <EmailSent /> :
+                                        <motion.div
+                                            key='contact-form'
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: 50 }}
+                                            transition={{ duration: 0.3 }}
 
-                                        </Col>
+                                        >
+                                            <Form ref={form} onSubmit={sendEmail}>
+                                                <Row>
+                                                    <Col className='col-5 col-sm-6'>
+                                                        <Form.Group className="mb-3" controlId="formBasicName">
+                                                            <Form.Control type="Name" placeholder="Name" />
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col >
+                                                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                                                            <Form.Control type="email" placeholder="Email" />
+                                                        </Form.Group>
 
-                                    </Row>
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Control type='text' placeholder="Subject" />
-                                    </Form.Group>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                        <Form.Control as="textarea" rows={6} placeholder="Message" />
-                                    </Form.Group>
-                                    <button className='custom-btn' type="submit">
-                                        Submit
-                                    </button>
-                                </Form>}
+                                                    </Col>
+
+                                                </Row>
+                                                <Form.Group className="mb-3" controlId="formBasicEmail">
+                                                    <Form.Control type='text' placeholder="Subject" />
+                                                </Form.Group>
+                                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                                    <Form.Control as="textarea" rows={6} placeholder="Message" />
+                                                </Form.Group>
+                                                <button className='custom-btn' type="submit">
+                                                    Submit
+                                                </button>
+                                            </Form>
+                                        </motion.div>
+                                    }
+                                </AnimatePresence>
+
+
 
                             </Col>
 

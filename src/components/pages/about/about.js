@@ -53,7 +53,7 @@ export default function About() {
  */}                        </p>
 
                         Html5/CSS3 Sass JS React.Js React Native Git Command Line Vs Code
-                        <Row className='mx-auto'>
+                        <Row className='mx-auto mt-3'>
 
                             <Col className='d-flex justify-content-end'>
                                 <a target="_blank" rel="noreferrer" href='http://www.linkedin.com/in/corey-coleman-881983218'>

@@ -5,7 +5,7 @@ import MovieSwiperImg from '../../../assets/images/MovieSwiper/movieappdemo.png'
 import NewsAppDemo from '../../../assets/images/MovieSwiper/newsappdemo.png'
 import WeatherDemo from '../../../assets/images/MovieSwiper/weatherdemo.png'
 import GreenGuideDemo from '../../../assets/images/MovieSwiper/greenguidedemo.png'
-
+import { AnimatePresence, motion } from 'framer-motion';
 
 import './Projects.scss'
 import VideoModal from './VideoModal'
@@ -20,9 +20,18 @@ const ProjectCard = ({ line, reverse, title, img, description, link, handleShow 
 
         <Row className={`d-flex ${direction} project-row `}>
             <Col className=' col-12 col-md-6 custom-border' >
-                <span onClick={handleShow} href={link} target="_blank" className='animate overflow-hidden mb-0 d-flex justify-content-center'>
+                <span onClick={handleShow} href={link} target="_blank" className=' overflow-hidden mb-0 d-flex justify-content-center'>
                     <span className=''></span>
-                    <img className='pic' src={img} alt='Sample Projects Preview' />
+                    <motion.div
+                      initial={{ scale: .85 }}
+                      whileInView={{ scale: 1}}
+                      margin='200px'
+                      viewport={{ once: true,  margin: "0px 0px -200px 0px" }}
+                      >
+
+                        <img className='pic' src={img} alt='Sample Projects Preview' />
+
+                    </motion.div>
                 </span>
             </Col>
             <Col className='my-auto col-12 col-md-6'>
