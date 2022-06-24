@@ -1,10 +1,11 @@
 import React from 'react'
 import './navbar.scss'
 import { Container, Nav, Navbar, Col, Row } from 'react-bootstrap'
+import Resume from '../../assets/CColemanResume.pdf'
 
 export default function MyNavbar() {
     return (
-        <Navbar expand='md' className='nav-border nav-container pt-2 ms-3 me-2 mx-md-5 pb-2'>
+        <Navbar expand='md' className='nav-border nav-container pt-1 ms-3 me-2 mx-md-5 pb-2'>
             <Container>
                 <Col>
                     <Navbar.Brand className='brand ' href="#home"> &lt;C/&gt;</Navbar.Brand>
@@ -44,7 +45,7 @@ export default function MyNavbar() {
                                     </Col>
                                     <Col className='col-12 col-sm-2 mx-3'>
                                         <Nav.Item className='d-flex justify-content-center '>
-                                            <Nav.Link eventKey="link-2">Resume</Nav.Link>
+                                            <Nav.Link href={Resume} target="_blank" rel="noreferrer" eventKey="link-2">Resume</Nav.Link>
                                         </Nav.Item>
 
                                     </Col>

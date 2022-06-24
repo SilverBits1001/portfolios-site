@@ -19,7 +19,6 @@ export default function About() {
                     </Col>
                     <Col className='col-lg-7 col-12  '>
                         <p className='section-content'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             {/*         I’m a very ambitious front-end developer looking to work with the latest
 
                             technologies on challenging and diverse projects. I am naturally curious, and always eager to learn more and take on new
@@ -36,16 +35,24 @@ export default function About() {
                             photography enthusiast, and tech-obsessed!!! */}
                         </p>
                         <p className='section-content'>
-                            I'm Corey, a Front-End Developer located in Los Angeles. I'm a weird guy who likes making weird things with web technologies.
-                            I enjoy the problem solving process that comes laong with programming, always trying to find the most practical solutions even if that means thinking outside the box. 
-                            I always aim for a pixel perfect design. 
-                            
+                            I'm Corey, a Front-End Developer located in Los Angeles.
+                            I thrive on creating digital experiences that live on the internet.
+                            I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
+                            I love the problem solving process that comes along with programming, always trying to find the most practical solutions even if that means thinking outside the box.
+                            I always aim for a pixel perfect design.
+                            As a lifetime student, I'm always excited to learn.
+                            I always work towards achieving the best result on each project I'm working on.
+                            I am currently working on ...
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
+                            Currently working on
+                            I thrive on bringing ideas to life.
                             {/*                             I'm Corey Coleman, a Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
  */}                        </p>
+
+                        Html5/CSS3 Sass JS React.Js React Native Git Command Line Vs Code
                         <Row className='mx-auto'>
 
                             <Col className='d-flex justify-content-end'>

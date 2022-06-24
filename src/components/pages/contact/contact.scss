@@ -1,10 +1,10 @@
 @import "./src/App.scss";
 
 .test {
-    border-bottom: 2px solid $red;
-    border-left: 1px solid $orange;
-    border-top: 1px solid $yellow;
-    border-right: 1px solid white;
+  border-bottom: 2px solid $red;
+  border-left: 1px solid $orange;
+  border-top: 1px solid $yellow;
+  border-right: 1px solid white;
 }
 
 /* .form  input, .contact .row .form .form-container textarea {
@@ -29,7 +29,19 @@ form div .form-control {
   color: #fff;
 }
 
-.contact-title{
-    text-align: center;
+.contact-title {
+  text-align: center;
 }
 
+.confirmation {
+margin: 0;
+padding: 0;
+  background-color: red;
+  position: absolute;
+
+}
+
+.email-sent{
+ height: 356px;
+
+}
