@@ -5,7 +5,7 @@ import MovieSwiperImg from '../../../assets/images/MovieSwiper/movieappdemo.png'
 import NewsAppDemo from '../../../assets/images/MovieSwiper/newsappdemo.png'
 import WeatherDemo from '../../../assets/images/MovieSwiper/weatherdemo.png'
 import GreenGuideDemo from '../../../assets/images/MovieSwiper/greenguidedemo.png'
-import { AnimatePresence, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 import './Projects.scss'
 import VideoModal from './VideoModal'
