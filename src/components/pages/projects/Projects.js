@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { motion } from 'framer-motion';
+import { MovieSwiperApp, WeatherApp, NewsApp, GreenGuide } from './ProjectsDb'
 
-import MovieSwiperImg from '../../../assets/images/MovieSwiper/movieappdemo.png'
-import NewsAppDemo from '../../../assets/images/MovieSwiper/newsappdemo.png'
-import WeatherDemo from '../../../assets/images/MovieSwiper/weatherdemo.png'
-import GreenGuideDemo from '../../../assets/images/MovieSwiper/greenguidedemo.png'
-import {  motion } from 'framer-motion';
 
 import './Projects.scss'
 import VideoModal from './VideoModal'
 
 
-
 const ProjectCard = ({ line, reverse, title, img, description, link, handleShow }) => {
+
+
 
     const direction = reverse ? 'flex-row-reverse' : 'flex-row'
 
@@ -23,11 +21,11 @@ const ProjectCard = ({ line, reverse, title, img, description, link, handleShow 
                 <span onClick={handleShow} href={link} target="_blank" className=' overflow-hidden mb-0 d-flex justify-content-center'>
                     <span className=''></span>
                     <motion.div
-                      initial={{ scale: .85 }}
-                      whileInView={{ scale: 1}}
-                      margin='200px'
-                      viewport={{ once: true,  margin: "0px 0px -200px 0px" }}
-                      >
+                        initial={{ scale: .85 }}
+                        whileInView={{ scale: 1 }}
+
+                        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+                    >
 
                         <img className='pic' src={img} alt='Sample Projects Preview' />
 
@@ -39,7 +37,19 @@ const ProjectCard = ({ line, reverse, title, img, description, link, handleShow 
                     <h3>{title}</h3>
                 </a>
                 <p className='project-description '>{description}</p>
+               <div className='d-flex justify-content-center align-items-center'>
+               <button onClick={handleShow} className='project-btn demo mx-2'>Live Demo</button>
+               <button onClick={() => window.open(link)}  className='project-btn github mx-2'>GitHub</button>
+            {/*     <a className='mx-2' target="_blank" rel="noreferrer" href='https://github.com/SilverBits1001'>
+                    <FontAwesomeIcon className='project-socials' icon={faGithub} size={'lg'} />
+                </a> */}
+
+               </div>
+
+
+
             </Col>
+
         </Row>
 
 
@@ -59,16 +69,16 @@ export default function Projects() {
             <VideoModal show={show} setShow={setShow} handleClose={handleClose} handleShow={handleShow} />
             <h2 className='text-center my-5'>Projects</h2>
             <div className='row-wrapper left top mx-md-5'>
-                <ProjectCard reverse={false} handleShow={handleShow} title='Movie Swiper App' img={MovieSwiperImg} description='This is a brief description of the listed project explaining what it does possibly.' link='https://github.com/SilverBits1001/Weather-App' />
+                <ProjectCard reverse={false} handleShow={handleShow} title={MovieSwiperApp.title} img={MovieSwiperApp.img} description={MovieSwiperApp.description} link={MovieSwiperApp.link} />
             </div>
             <div className='row-wrapper top right mx-md-5'>
-                <ProjectCard l reverse={true} handleShow={handleShow} title='Weather App' img={WeatherDemo} description='This is a brief description of the listed project explaining what it does possibly.' link='https://github.com/SilverBits1001/Weather-App' />
+                <ProjectCard reverse={true} handleShow={handleShow} title={WeatherApp.title} img={WeatherApp.img} description={WeatherApp.description} link={WeatherApp.link} />
             </div>
             <div className='row-wrapper top  left mx-md-5'>
-                <ProjectCard reverse={false} handleShow={handleShow} title='News App' img={NewsAppDemo} description='This is a brief description of the listed project explaining what it does possibly.' link='https://github.com/SilverBits1001/Weather-App' />
+                <ProjectCard reverse={false} handleShow={handleShow} title={NewsApp.title} img={NewsApp.img} description={NewsApp.description} link={NewsApp.link} />
             </div>
             <div className='row-wrapper top bottom right mx-md-5'>
-                <ProjectCard reverse={true} handleShow={handleShow} title='The Green Guide ' img={GreenGuideDemo} description='This is a brief description of the listed project explaining what it does possibly.' link='https://github.com/SilverBits1001/Weather-App' />
+                <ProjectCard reverse={true} handleShow={handleShow} title={GreenGuide.title} img={GreenGuide.img} description={GreenGuide.description} link={GreenGuide.link} />
             </div>
         </Container>
     )

@@ -6,3 +6,9 @@ https://www.fontpair.co/pairing/space-mono-roboto-mono
 
 
 }
+
+
+projects to work on{
+    linked list visualizer
+    search algorithm visualizer
+}
