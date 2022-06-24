@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
+/* 
 import emailjs from '@emailjs/browser';
+ */
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import Lottie from "react-lottie";
 import animationData from '../../../lotties/email-sent.json';
