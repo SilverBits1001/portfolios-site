@@ -27,6 +27,7 @@ h3 {
 }
 .project-description {
   text-align: center;
+  font-size: .85rem;
 }
 
 .project-row {
@@ -90,4 +91,8 @@ h3 {
 &.demo{
   border-color: $red;
 }
+}
+
+.img-wrapper{
+  background-color: red;
 }

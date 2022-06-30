@@ -35,7 +35,7 @@ export default function About() {
                             photography enthusiast, and tech-obsessed!!! */}
                         </p>
                         <p className='section-content'>
-                            I'm Corey, a Front-End Developer located in Los Angeles.
+                            I'm Corey, a Front-End Developer {/* located in Los Angeles */}.
                             I thrive on creating digital experiences that live on the internet.
                             I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
                             I love the problem solving process that comes along with programming, always trying to find the most practical solutions even if that means thinking outside the box.
