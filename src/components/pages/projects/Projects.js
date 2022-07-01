@@ -104,16 +104,16 @@ export default function Projects() {
         <Container id='projects'>
             <VideoModal show={show} setShow={setShow} handleClose={handleClose} handleShow={handleShow} />
             <h2 className='text-center my-5'>Projects</h2>
-            <div className='row-wrapper left top mx-md-5'>
+            <div className='row-wrapper left top mx-0 mx-lg-5'>
                 <ProjectCard video={true} reverse={false} handleShow={handleShow} title={MovieSwiperApp.title} img={MovieSwiperApp.img} description={MovieSwiperApp.description} link={MovieSwiperApp.link} technologies={MovieSwiperApp.technologies} />
             </div>
-            <div className='row-wrapper top right mx-md-5'>
+            <div className='row-wrapper top right mx-0 mx-lg-5'>
                 <ProjectCard video={true} reverse={true} handleShow={handleShow} title={WeatherApp.title} img={WeatherApp.img} description={WeatherApp.description} link={WeatherApp.link} technologies={WeatherApp.technologies} />
             </div>
-            <div className='row-wrapper top  left mx-md-5'>
+            <div className='row-wrapper top  left mx-0 mx-lg-5'>
                 <ProjectCard video={true} reverse={false} handleShow={handleShow} title={NewsApp.title} img={NewsApp.img} description={NewsApp.description} link={NewsApp.link} technologies={NewsApp.technologies} />
             </div>
-            <div className='row-wrapper top bottom right mx-md-5'>
+            <div className='row-wrapper top bottom right mx-0 mx-lg-5'>
                 <ProjectCard video={false} reverse={true} handleShow={handleShow} title={GreenGuide.title} img={GreenGuide.img} description={GreenGuide.description} link={GreenGuide.link} technologies={GreenGuide.technologies} />
             </div>
         </Container>

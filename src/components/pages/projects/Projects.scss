@@ -11,7 +11,11 @@ h3 {
 }
 
 .pic {
-  height: 400px;
+  max-width: (400px);
+  min-width: (200px);
+    width: 100%;
+    height: auto;
+
 
   /*   animation: slideInUp;
   animation-duration: 2s; */
@@ -39,6 +43,7 @@ h3 {
 .line-left {
   border-bottom: 0.2rem solid #e4572e;
   border-right: 0.2rem solid #e4572e;
+
 }
 
 .row-wrapper {
@@ -52,6 +57,7 @@ h3 {
 }
 .left {
   padding-left: 1rem;
+  
 }
 .right {
   padding-right: 1rem;
