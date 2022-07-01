@@ -17,7 +17,7 @@ export default function Home() {
                         <h3 className='sub-heading '>
                             <Typewriter
                                 options={{
-                                    strings: ['//a software developer', '// a problem solver', ''],
+                                    strings: ['//a software developer', '// place holder text', 'also placeholder text'],
                                     autoStart: true,
                                     loop: true,
                                 }}

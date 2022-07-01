@@ -35,7 +35,8 @@ export default function About() {
                             photography enthusiast, and tech-obsessed!!! */}
                         </p>
                         <p className='section-content'>
-                            I'm Corey, a Front-End Developer {/* located in Los Angeles */}.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                         {/*    I'm Corey, a Front-End Developer located in Los Angeles.
                             I thrive on creating digital experiences that live on the internet.
                             I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
                             I love the problem solving process that comes along with programming, always trying to find the most practical solutions even if that means thinking outside the box.
@@ -46,13 +47,13 @@ export default function About() {
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
                             Currently working on
-                            I thrive on bringing ideas to life.
+                            I thrive on bringing ideas to life. */}
                             {/*                             I'm Corey Coleman, a Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
                             I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
                             When not working or futzing around with code, I study how to escape from University. Actually for hire.
  */}                        </p>
-
-                        Html5/CSS3 Sass JS React.Js React Native Git Command Line Vs Code
+{/* 
+                        HTML CSS Sass JS React.Js React Native Git Vs Code */}
                         <Row className='mx-auto mt-3'>
 
                             <Col className='d-flex justify-content-end'>

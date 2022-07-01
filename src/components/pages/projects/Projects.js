@@ -8,20 +8,24 @@ import './Projects.scss'
 import VideoModal from './VideoModal'
 
 
-const ProjectCard = ({ video, line, reverse, title, img, description, link, handleShow }) => {
+const ProjectCard = ({ video, line, reverse, title, img, description, link, handleShow, technologies }) => {
+    const direction = reverse ? 'flex-row-reverse' : 'flex-row'
+    const test = video ? handleShow : () => window.open(link)
+   
 
-    const ImgWrapper = ({ video, children }) => {
+    //ImgWrapper to wrap around the picture to determine if video should be played, or link to demo site
+    const ImgWrapper = ({ video, children }) => { 
 
         return (
             <>
                 {
                     video
                         ?
-                        <span onClick={handleShow} href={link} target="_blank" className=' overflow-hidden mb-0 d-flex justify-content-center'>
+                        <span onClick={handleShow} href={link} target="_blank" className=' mb-0 d-flex justify-content-center'>
                             {children}
                         </span>
                         :
-                        <a href={link} target="_blank" rel="noreferrer" className='overflow-hidden mb-0 d-flex justify-content-center '>
+                        <a href={link} target="_blank" rel="noreferrer" className=' mb-0 d-flex justify-content-center '>
                             {children}
                         </a>
                 }
@@ -30,9 +34,7 @@ const ProjectCard = ({ video, line, reverse, title, img, description, link, hand
         )
     }
 
-    const direction = reverse ? 'flex-row-reverse' : 'flex-row'
 
-    const test = video ? handleShow : () => window.open(link)
 
     return (
 
@@ -50,12 +52,6 @@ const ProjectCard = ({ video, line, reverse, title, img, description, link, hand
 
                     </motion.div>
                 </ImgWrapper>
-            </Col>
-            <Col className='my-auto col-12 col-md-6'>
-                <a href={link} target="_blank" rel="noreferrer" className='animate overflow-hidden mb-0 '>
-                    <h3>{title}</h3>
-                </a>
-                <p className='project-description '>{description}</p>
                 <div className='d-flex justify-content-center align-items-center'>
                     <button onClick={test} className='project-btn demo mx-2'>Live Demo</button>
                     <button onClick={() => window.open(link)} className='project-btn github mx-2'>GitHub</button>
@@ -64,6 +60,27 @@ const ProjectCard = ({ video, line, reverse, title, img, description, link, hand
                 </a> */}
 
                 </div>
+            </Col>
+            <Col className='mt-5 d-flex flex-column align-items-center col-12 col-md-6'>
+
+                <a href={link} target="_blank" rel="noreferrer" className='animate overflow-hidden mb-0 '>
+                    <h3>{title}</h3>
+                </a>
+
+                <p className='project-description '>{description}</p>
+
+                <div className='technology-wrapper d-flex justify-content-center mt-auto p-2 '>
+                    {technologies.map((technology, index) => {
+                        return (
+                            <p key={index} className='technologies'>{technology}</p>
+
+                        )
+                    })}
+
+
+                </div>
+
+
 
 
 
@@ -88,16 +105,16 @@ export default function Projects() {
             <VideoModal show={show} setShow={setShow} handleClose={handleClose} handleShow={handleShow} />
             <h2 className='text-center my-5'>Projects</h2>
             <div className='row-wrapper left top mx-md-5'>
-                <ProjectCard video={true} reverse={false} handleShow={handleShow} title={MovieSwiperApp.title} img={MovieSwiperApp.img} description={MovieSwiperApp.description} link={MovieSwiperApp.link} />
+                <ProjectCard video={true} reverse={false} handleShow={handleShow} title={MovieSwiperApp.title} img={MovieSwiperApp.img} description={MovieSwiperApp.description} link={MovieSwiperApp.link} technologies={MovieSwiperApp.technologies} />
             </div>
             <div className='row-wrapper top right mx-md-5'>
-                <ProjectCard video={true} reverse={true} handleShow={handleShow} title={WeatherApp.title} img={WeatherApp.img} description={WeatherApp.description} link={WeatherApp.link} />
+                <ProjectCard video={true} reverse={true} handleShow={handleShow} title={WeatherApp.title} img={WeatherApp.img} description={WeatherApp.description} link={WeatherApp.link} technologies={WeatherApp.technologies} />
             </div>
             <div className='row-wrapper top  left mx-md-5'>
-                <ProjectCard video={true} reverse={false} handleShow={handleShow} title={NewsApp.title} img={NewsApp.img} description={NewsApp.description} link={NewsApp.link} />
+                <ProjectCard video={true} reverse={false} handleShow={handleShow} title={NewsApp.title} img={NewsApp.img} description={NewsApp.description} link={NewsApp.link} technologies={NewsApp.technologies} />
             </div>
             <div className='row-wrapper top bottom right mx-md-5'>
-                <ProjectCard video={false} reverse={true} handleShow={handleShow} title={GreenGuide.title} img={GreenGuide.img} description={GreenGuide.description} link={GreenGuide.link} />
+                <ProjectCard video={false} reverse={true} handleShow={handleShow} title={GreenGuide.title} img={GreenGuide.img} description={GreenGuide.description} link={GreenGuide.link} technologies={GreenGuide.technologies} />
             </div>
         </Container>
     )
